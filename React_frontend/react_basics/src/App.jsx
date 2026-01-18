@@ -1,12 +1,12 @@
 
 import './App.css'
 import {Card} from './components/ui/Card';
-import Card2 from './components/ui/Card2';
+import {Card2, Card3} from './components/ui/Card2';
 
 
 function App() {
 
-    const user1={
+const user1={
   details : {name: 'Ayush' ,age : 21, id : 1},
   address : {city: 'Nagpur' ,state : 'maharashtra', zipcode : 440035},
   contacts : {number : '9881961369' ,email : 'jaiswalamol83@gmail.com'}
@@ -26,8 +26,10 @@ const data1={
   name: "Abhijecta",
   age: 27
 }
+
 const users=[user1,user2,user3]
 const data=[data1]
+const language=['HTML','CSS','JS','REACT']
 
   return (
     <>
@@ -36,7 +38,10 @@ const data=[data1]
    </div>
 
    <div>
-      <Card2 users={data}/>
+      <Card2 data={data} />
+   </div>
+   <div>
+      <Card3 language={language} />
    </div>
    </>
 )

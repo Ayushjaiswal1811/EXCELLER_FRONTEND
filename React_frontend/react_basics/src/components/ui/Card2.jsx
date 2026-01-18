@@ -13,4 +13,22 @@ function Card2({data}) {
   )
 }
 
-export default Card2
+function Card3 (language){
+  return (
+    <div>
+      <li>{language.map((abc) => <><span>{abc}</span><br /></>)}</li>
+    </div>
+  )
+}
+
+export { Card2, Card3 }
+
+
+
+
+
+
+
+
+
+

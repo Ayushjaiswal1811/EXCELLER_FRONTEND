@@ -42,10 +42,10 @@ localStorage.setItem("products",JSON.stringify(
         <TableHead>
           <TableRow>
             <TableCell>Id</TableCell>
+             <TableCell align="right">Image</TableCell>
             <TableCell align="right">Name</TableCell>
             <TableCell align="right">Category&nbsp;(0)</TableCell>
             <TableCell align="right">price&nbsp;($)</TableCell>
-            <TableCell align="right">Image&nbsp;(-)</TableCell>
             <TableCell align="right">Editable Links</TableCell>
             <TableCell align="right">Delete Product</TableCell>
           </TableRow>
@@ -57,10 +57,10 @@ localStorage.setItem("products",JSON.stringify(
               <TableCell component="th" scope="row">
                 {user.id}
               </TableCell>
+              <TableCell align="right"><img src={user.image} alt={user.name}></img></TableCell>
               <TableCell align="right">{user.name}</TableCell>
               <TableCell align="right">{user.category}</TableCell>
               <TableCell align="right">{user.price}</TableCell>
-              <TableCell align="right"><img src={user.image} alt={user.name}></img></TableCell>
               <TableCell align="right"><Link to={`/edit/${user.id}`}>Edit</Link></TableCell>
               <TableCell align="right"><Button 
                                         variant="contained"

@@ -38,6 +38,8 @@ setProduct({
             image: ""
         })
 }
+
+
   return (
     <div>
       <h1> Add product</h1>
@@ -95,7 +97,7 @@ setProduct({
           variant="contained"
           fullWidth
           margin="normal" >
-            Submit
+            ADD
           </Button>
 
       </form>

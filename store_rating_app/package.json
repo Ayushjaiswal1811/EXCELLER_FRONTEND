@@ -1,5 +1,5 @@
 {
-  "name": "product-management",
+  "name": "store_rating_app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,13 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.1",
-    "@mui/icons-material": "^7.3.6",
-    "@mui/material": "^7.3.6",
+    "@progress/kendo-react-form": "^13.2.0",
+    "postprocessing": "^6.38.2",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "react-router-dom": "^6.28.2"
+    "three": "^0.182.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",

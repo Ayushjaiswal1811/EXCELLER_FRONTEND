@@ -1,17 +1,12 @@
 import { Link, Outlet } from "react-router-dom"
-
+import Navbar from "../components/Navbar"
+import Footer from "../components/Footer"
 function Layout() {
   return (
     <div>
-      <h1> MY Product Management App</h1>
-      <ul>
-        <li>
-          <Link to={'/home'}>Home</Link>
-          <Link to={'/add'}>Add Product</Link>
-          <Link to={'/edit/:id'}>Edit Product</Link>
-        </li>
-      </ul>
+      <Navbar />
       <Outlet />
+      <Footer />
     </div>
   )
 }
